@@ -13,3 +13,6 @@ pom.xml.asc
 .hg/
 .clj-kondo
 .lsp
+node_modules
+.shadow-cljs
+resources/public
