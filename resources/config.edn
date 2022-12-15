@@ -1,0 +1,5 @@
+{:server {:host "127.0.0.1"
+          :port 4000
+          :join? false}
+ :ui     {:host "127.0.0.1"
+          :port 3000}}

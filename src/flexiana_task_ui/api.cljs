@@ -16,7 +16,7 @@
 
 (defn scramble
   []
-  (GET server-uri
+  (GET (str server-uri "api")
     {:params {:s1 (:rearranged-string @state/*strings)
               :s2 (:match-string @state/*strings)}
      :handler handler
