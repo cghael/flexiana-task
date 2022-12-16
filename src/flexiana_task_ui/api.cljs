@@ -11,8 +11,8 @@
 
 (defn error-handler
   [{:keys [status status-text] :as response}]
-  (.log js/console (str "No patients found: " status " " status-text))
-  ((reset! state/*result {:error "Service unavailable."})))
+  (.log js/console (str "Service error: " status " " status-text))
+  (reset! state/*result {:error "Service unavailable."}))
 
 (defn scramble
   []
