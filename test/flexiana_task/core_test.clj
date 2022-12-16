@@ -8,7 +8,7 @@
 
   (testing "GET request with two correct strings in params.
             Expecting answer: true."
-    (let [res (sut/app {:uri "/"
+    (let [res (sut/app {:uri "/api"
                         :request-method :get
                         :params {:s1 "cedewaraaossoqqyt"
                                  :s2 "codewars"}})
@@ -19,7 +19,7 @@
 
   (testing "GET request with two correct strings in params.
             Expecting answer: false."
-    (let [res (sut/app {:uri "/"
+    (let [res (sut/app {:uri "/api"
                         :request-method :get
                         :params {:s1 "katas"
                                  :s2 "steak"}})
@@ -34,7 +34,7 @@
 (deftest incorrect-params-test
 
   (testing "GET request with one empty string."
-    (let [res (sut/app {:uri "/"
+    (let [res (sut/app {:uri "/api"
                         :request-method :get
                         :params {:s1 "katas"
                                  :s2 ""}})
@@ -45,7 +45,7 @@
       (is (= res exp))))
 
   (testing "GET request with one parameter"
-    (let [res (sut/app {:uri "/"
+    (let [res (sut/app {:uri "/api"
                         :request-method :get
                         :params {:s1 "katas"}})
           exp {:headers {"content-type" "application/edn"}
@@ -60,7 +60,7 @@
 (deftest incorrect-request-test
 
   (testing "POST request test"
-    (let [res (sut/app {:uri "/"
+    (let [res (sut/app {:uri "/api"
                         :request-method :post
                         :params {:s1 "katas"
                                  :s2 "steak"}})
@@ -84,7 +84,7 @@
 
 (deftest core-app-test
   (testing "Middleware add :params and :query-params to request from :query-string"
-    (let [request {:uri "/"
+    (let [request {:uri "/api"
                    :request-method :get
                    :query-string "s1=katas&s2=steak"}
           wrap-echo (core/my-middleware identity)
