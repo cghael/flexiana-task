@@ -24,9 +24,7 @@ $ java -jar target/uberjar/flexiana.jar
 
 ## Usage
 
-1. Open in browser 
-
-> http://localhost:4000/
+1. Open in browser http://localhost:4000/
 
 2. In the first input enter the rearranged string.
 
@@ -38,7 +36,9 @@ If a portion of the first characters can be rearranged to match second string - 
 
 ## Examples
 
-![Screenshot](doc/ui.png)
+![Screenshot](doc/ui-enter.png)
+
+![Screenshot](doc/ui-result.png)
 
 ### Bugs
 
