@@ -5,7 +5,7 @@ The project is compiled into one uberjar with lein and shadow-cljs.
 
 ## Installation
 
-To compile uberjar please use
+To compile uberjar:
 
 ```bash
 $ lein uberjar
@@ -17,7 +17,7 @@ To clean temporary output folders ("target" and "resources/public/js"):
 $ lein clean
 ```
 
-To run the application use in console:
+To run the application:
 
 ```bash
 $ java -jar target/uberjar/flexiana.jar
