@@ -1,24 +1,32 @@
-# flexiana-task
+# Scramble SPA
 
-FIXME: description
+Simple SPA written on clojure (ring + compojure) and clojurescript (reagent). The project is compiled into one uberjar with lein and shadow-cljs. 
 
 ## Installation
 
-Download from http://example.com/FIXME.
+To compile uberjar please use
+
+    $ lein uberjar
+
+
+To clean temporary output folders ("target" and "resources/public/js"):
+
+    $ lein uberjar
+
+
+To run the application use in console:
+
+    $ java -jar target/uberjar/flexiana.jar
 
 ## Usage
 
-FIXME: explanation
+Open in browser 'http://localhost:4000/'
 
-    $ java -jar flexiana-task-0.1.0-standalone.jar [args]
 
-## Options
-
-FIXME: listing of options this app accepts.
 
 ## Examples
 
-...
+![Screenshot](screenshot.png)
 
 ### Bugs
 
