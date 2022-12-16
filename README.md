@@ -13,7 +13,7 @@ $ lein uberjar
 To clean temporary output folders ("target" and "resources/public/js"):
 
 ```bash
-$ lein uberjar
+$ lein clean
 ```
 
 To run the application use in console:
