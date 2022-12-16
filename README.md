@@ -1,6 +1,7 @@
 # Scramble SPA
 
-Simple SPA written on clojure (ring + compojure) and clojurescript (reagent). The project is compiled into one uberjar with lein and shadow-cljs. 
+Simple SPA written on clojure (ring + compojure) and clojurescript (reagent). 
+The project is compiled into one uberjar with lein and shadow-cljs. 
 
 ## Installation
 
@@ -13,7 +14,7 @@ $ lein uberjar
 To clean temporary output folders ("target" and "resources/public/js"):
 
 ```bash
-$ lein uberjar
+$ lein clean
 ```
 
 To run the application use in console:
