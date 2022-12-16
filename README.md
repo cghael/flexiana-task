@@ -24,15 +24,21 @@ $ java -jar target/uberjar/flexiana.jar
 
 ## Usage
 
-Open in browser 
+1. Open in browser 
 
 > http://localhost:4000/
 
+2. In the first input enter the rearranged string.
 
+3. In the second - the match string.
+
+4. Then press 'Scramble' button.
+
+If a portion of the first characters can be rearranged to match second string - returns true, otherwise returns false.
 
 ## Examples
 
-![Screenshot](screenshot.png)
+![Screenshot](doc/ui.png)
 
 ### Bugs
 
