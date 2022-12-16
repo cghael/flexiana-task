@@ -24,7 +24,9 @@ $ java -jar target/uberjar/flexiana.jar
 
 ## Usage
 
-Open in browser 'http://localhost:4000/'
+Open in browser 
+
+> http://localhost:4000/
 
 
 
