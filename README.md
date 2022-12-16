@@ -6,17 +6,21 @@ Simple SPA written on clojure (ring + compojure) and clojurescript (reagent). Th
 
 To compile uberjar please use
 
-    $ lein uberjar
-
+```bash
+$ lein uberjar
+```
 
 To clean temporary output folders ("target" and "resources/public/js"):
 
-    $ lein uberjar
-
+```bash
+$ lein uberjar
+```
 
 To run the application use in console:
 
-    $ java -jar target/uberjar/flexiana.jar
+```bash
+$ java -jar target/uberjar/flexiana.jar
+```
 
 ## Usage
 
